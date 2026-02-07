@@ -1,4 +1,10 @@
 import React from 'react'
+import { MdPlace } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5"
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,11 +22,11 @@ export default function Footer() {
             FALAK <span className="text-cyan-400">CYBER WORLD</span>
           </h2>
           <p className="text-slate-400 leading-relaxed font-medium">
-            Your trusted partner for digital documentation and professional electronics repair in Gopalganj.
+            Your trusted partner for digital documentation and professional electronics repair in Bishunpura.
           </p>
           <div className="flex gap-4">
             {/* Social Icons Placeholders */}
-            {['Facebook', 'Twitter'].map((social) => (
+            {[<FaFacebook/>, <FaSquareInstagram/>].map((social) => (
               <a key={social} href="#" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center font-bold text-xs hover:bg-cyan-500 hover:text-slate-950 transition-all">
                 {social}
               </a>
@@ -53,15 +59,15 @@ export default function Footer() {
           <h3 className="text-lg font-bold mb-6 text-white uppercase tracking-widest">Contact Us</h3>
           <div className="space-y-4 text-slate-400 font-medium">
             <p className="flex items-start gap-3">
-              <span className="text-cyan-400">📍</span> 
+              <span className="text-cyan-400"><MdPlace/></span> 
               Bishnupura Bazar, Barauli, <br /> Gopalganj, Bihar
             </p>
             <p className="flex items-center gap-3">
-              <span className="text-cyan-400">📞</span> 
-              +91 8010101135
+              <span className="text-cyan-400"><IoCall/></span> 
+              +91-8010101135
             </p>
             <p className="flex items-center gap-3">
-              <span className="text-cyan-400">✉️</span> 
+              <span className="text-cyan-400"><MdEmail/></span> 
               falakcyberworld@gmail.com
             </p>
           </div>
@@ -72,7 +78,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm font-bold">
         <p>© {currentYear} Falak Cyber World. All rights reserved.</p>
         <p className="flex gap-6 uppercase tracking-tighter">
-          <span>Developed with ❤️ SERAJ</span>
+          <span>Developed with ❤️</span>
         </p>
       </div>
     </footer>

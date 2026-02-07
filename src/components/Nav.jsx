@@ -56,7 +56,7 @@ export default function Navbar() {
                         
                         <Link to="/login">
                             <button className="px-6 py-2.5 bg-slate-900 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-xl hover:bg-indigo-600 transition-all active:scale-95 shadow-lg shadow-slate-200">
-                                Client Login
+                               Login
                             </button>
                         </Link>
                     </div>
@@ -93,7 +93,7 @@ export default function Navbar() {
                         ))}
                         <Link to="/login" onClick={() => setOpen(false)}>
                             <button className="w-full py-3 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest rounded-lg">
-                                Client Login
+                                Login
                             </button>
                         </Link>
                     </div>
